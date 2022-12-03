@@ -9,9 +9,9 @@ In the first step, we tried to simplify the model to get a large number of resul
 # IVMM: Reduced Model 1
 > Calculate the probability transfer matrix  
 \> load('full_model_res.mat')  
-\> \[] = compute_IVrefMM(res_full_model,params);  
+\> \[estate_mat,istate_mat] = compute_IVrefMM(res_full_model,params);  
 \> load('full_model_res.mat2')  
-\> \[estate_matref,istate_matref] = compute_IVrefMM(res_full_model,params, estate_matref,istate_matref);  
+\> \[estate_mat,istate_mat] = compute_IVrefMM(res_full_model,params,estate_mat,istate_mat);  
 > Run IVMM (This step can be directly carried out when there is a transfer matrix “eirefstate_mat.mat”)  
-\> IVrefMM_list = generate_IVrefMM(estate_matref,istate_matref);  
+\> IVrefMM_list = generate_IVrefMM(estate_mat,istate_mat);  
 \> plot_fft(IVrefMM_list(1,:),IVrefMM_list(2,:));  
