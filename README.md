@@ -4,7 +4,7 @@ We hope to study the functional relationship between adaptive phenomena and cort
 In the first step, we tried to simplify the model to get a large number of results quickly.
 
 # full model
-&ltmain_mutimodel
+/&ltmain_mutimodel
 
 # IVMM: Reduced Model 1
 &ltload('full_model_res.mat')
