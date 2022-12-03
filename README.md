@@ -7,6 +7,10 @@ In the first step, we tried to simplify the model to get a large number of resul
 \> main_mutimodel  
 
 # IVMM: Reduced Model 1
+## method
+Replace variance information with mean value information of current and voltage  
+
+## code useage
 > Calculate the probability transfer matrix  
 \> load('full_model_res.mat')  
 \> \[estate_mat,istate_mat] = compute_IVrefMM(res_full_model,params);  
