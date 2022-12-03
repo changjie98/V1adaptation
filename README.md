@@ -3,14 +3,14 @@ Purpose
 We hope to study the functional relationship between adaptive phenomena and cortical networks in the primary visual cortex. For this reason, we have adopted a full model of our predecessors.
 In the first step, we tried to simplify the model to get a large number of results quickly.
 
-# full model
+## full model
 \> main_mutimodel  
 
-# IVMM: Reduced Model 1
-## method
+## IVMM: Reduced Model 1
+### method
 Replace variance information with mean value information of current and voltage  
 
-## code useage
+### code useage
 > Calculate the probability transfer matrix  
 \> load('full_model_res.mat')  
 \> \[estate_mat,istate_mat] = compute_IVrefMM(res_full_model,params);  
