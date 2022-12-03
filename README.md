@@ -7,6 +7,7 @@ In the first step, we tried to simplify the model to get a large number of resul
 \> main_mutimodel  
 
 # IVMM: Reduced Model 1
+> Calculate the probability transfer matrix
 \> load('full_model_res.mat')  
 \> \[] = compute_IVrefMM(res_full_model,params);  
 \> load('full_model_res.mat2')  
