@@ -7,10 +7,10 @@ In the first step, we tried to simplify the model to get a large number of resul
 \> main_mutimodel
 
 # IVMM: Reduced Model 1
-&ltload('full_model_res.mat')
-&lt[] = compute_IVrefMM(res_full_model,params);
-&ltload('full_model_res.mat2')
-&lt[estate_matref,istate_matref] = compute_IVrefMM(res_full_model,params, estate_matref,istate_matref);
-Run IVMM (This step can be directly carried out when there is a transfer matrix “eirefstate_mat.mat”)
-&ltIVrefMM_list = generate_IVrefMM(estate_matref,istate_matref);
-&ltplot_fft(IVrefMM_list(1,:),IVrefMM_list(2,:));
+\> load('full_model_res.mat')
+\> \[] = compute_IVrefMM(res_full_model,params);
+\> load('full_model_res.mat2')
+\> \[estate_matref,istate_matref] = compute_IVrefMM(res_full_model,params, estate_matref,istate_matref);
+> Run IVMM (This step can be directly carried out when there is a transfer matrix “eirefstate_mat.mat”)
+\> IVrefMM_list = generate_IVrefMM(estate_matref,istate_matref);
+\> plot_fft(IVrefMM_list(1,:),IVrefMM_list(2,:));
