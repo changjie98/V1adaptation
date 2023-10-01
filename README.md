@@ -25,7 +25,7 @@ Replace variance information with mean value information of current and voltage
 Mean field and ODE. Treat neurons with similar voltages as a distribution
 
 ### code useage
-> Run the model
-\> main_mutimodel
-> Calculate Jacobian matrix
+> Run the model  
+\> main_mutimodel  
+> Calculate Jacobian matrix  
 \> \[J_mat,D_vac] = get_jacobian_matrix(res_ODEfull_model,params, time_index);
