@@ -15,6 +15,7 @@ params.p_ee = 0.8; % P(preE activate postE)
 params.p_ie = 0.8; % P(preE activate postI)
 params.p_ei = 0.8; % P(preI activate postE)
 params.p_ii = 0.8; % P(preI activate postI)
+%% Syn与Hom切换参数
 params.s_ee = 0.95;
 params.s_ie = 1.25;
 params.s_ei = 3.1;
