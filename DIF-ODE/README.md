@@ -1,6 +1,6 @@
 # 命令行
 ## LIF模型：
-\>main_LIF
+\>main_LIF     
 \>plot(params.dt:params.dt:params.duration_time,res_lif.fr_e,'r');
 ## DIFODE模型：
 ## 无初始状态，havestart设置为0
