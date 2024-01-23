@@ -1,0 +1,34 @@
+tic;
+params = struct;
+params.Ex_Poisson_lambda = 7;
+params.M = 100;
+params.Mr = 66;
+params.ne = 300;
+params.ni = 100;
+params.dt = 0.1;
+params.duration_time = 10000;
+params.tau_ee = 1.4;
+params.tau_ie = 1.2;
+params.tau_i = 4.5;
+params.tau_r = 0;
+params.p_ee = 0.8; % P(preE activate postE)
+params.p_ie = 0.8; % P(preE activate postI)
+params.p_ei = 0.8; % P(preI activate postE)
+params.p_ii = 0.8; % P(preI activate postI)
+params.s_ee = 0.95;
+params.s_ie = 1.25;
+params.s_ei = 3.1;
+params.s_ii = 2.45;
+    
+%% 双周期参数
+%     params.tau_ee = 1.4;
+%     params.tau_ie = 1.2;
+%     params.s_ee     = 0.94;
+%     params.s_ie     = 1.25;
+%     params.s_ei     = 2.61;
+%     params.s_ii     = 2.45;
+
+res_lif = run_LIF_model1(params);
+res_lif.Ex_type = Ex_type;
+    
+toc
