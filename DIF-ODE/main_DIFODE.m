@@ -118,7 +118,7 @@ for i = 2:params.t_end % 从“这一时刻”计算
     % I_e_var(i,:) = I_eex_var(i-1,:) + I_ee_var + I_ei_var;
     E_state.I_n_mean = I_e_mean(i,:);
     E_state.I_n_var = I_e_var(i,:);
-    E_output = DIFODE_module3(E_state,params);
+    E_output = DIFODE_module_bins(E_state,params);
     
     I_state.V_n_all = V_i_all(i-1,:);
     I_state.n_n = n_i(i-1,:);
@@ -141,7 +141,7 @@ for i = 2:params.t_end % 从“这一时刻”计算
     I_state.I_n_mean = I_i_mean(i,:);
     I_i_var(i,I_i_var(i,:)<0) = 0;
     I_state.I_n_var = I_i_var(i,:);
-    I_output = DIFODE_module3(I_state,params);
+    I_output = DIFODE_module_bins(I_state,params);
     
     %% 计算这一时刻电流的分布参数
     dH_ee_mean = -H_ee_mean(i-1)/params.tau_ee + fr_e(i-1)*params.p_ee; % mean
