@@ -93,7 +93,7 @@ for k = find(n_n(1,:))
     nf_n(i) = nf_n(i) + n_n_num(end);
 end
 
-%% 计算跳跃后的结果
+%% 计算跳跃后
 fr_n(i) = nf_n(i)/dt;
 ref_n(i) = ref_n(i-1) + nf_n(i);
 
