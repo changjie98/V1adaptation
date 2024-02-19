@@ -74,7 +74,7 @@ for k = find(n_n(1,:))
     else
         V_lim = [-20 0 20 40 60 62:2:100];% 注意这里要少一个左边的区间
     end
-    %% 上一时刻的电流与电压卷积，计算每一个区间内神经元的跳跃
+    %% 上一时刻的电流与电压卷积，计算每一个区间内神经元跳跃
     % 别忘了有可能会跳多个bin，计算完成后要检查一下max(res_DIFODE.I_e_mean*dt)
     n_probability_accumulation = (sqrt(2./pi).*sigma.*(exp(-(b+mu-V_lim).^2./(2.*sigma.^2))-exp(-(a+mu-V_lim).^2./(2.*sigma.^2)))...
         -(a+mu-V_lim).*erf((a+mu-V_lim)./(sqrt(2).*sigma))+(b+mu-V_lim).*erf((b+mu-V_lim)./(sqrt(2).*sigma)))./(2.*(a-b));
